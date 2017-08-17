@@ -2,7 +2,7 @@
 <html ng-app="blocChatProject">
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Bloc Base Project</title>
+    <title>Bloc Chat</title>
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
@@ -20,21 +20,12 @@
     <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
-	<script>
-	  // Initialize Firebase
-	  var config = {
-	    apiKey: "AIzaSyA_K92XSWKLx0XvaUeVsMGnyfypq_biVVM",
-	    authDomain: "first-project-469c2.firebaseapp.com",
-	    databaseURL: "https://first-project-469c2.firebaseio.com",
-	    projectId: "first-project-469c2",
-	    storageBucket: "",
-	    messagingSenderId: "836239361597"
-	  };
-	  firebase.initializeApp(config);
-	</script>
 
-    <!-- Application files -->
+
+    <!-- Application, controller, service files -->
     <script src="/scripts/app.js"></script>
+    <script src="/scripts/controllers/HomeCtrl.js"></script>
+    <script src="/scripts/factories/Room.js"></script>
 
 </body>
 </html>
