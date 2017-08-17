@@ -20,7 +20,18 @@
     <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
-
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyA_K92XSWKLx0XvaUeVsMGnyfypq_biVVM",
+        authDomain: "first-project-469c2.firebaseapp.com",
+        databaseURL: "https://first-project-469c2.firebaseio.com",
+        projectId: "first-project-469c2",
+        storageBucket: "",
+        messagingSenderId: "836239361597"
+      };
+      firebase.initializeApp(config);
+    </script>
 
     <!-- Application, controller, service files -->
     <script src="/scripts/app.js"></script>
