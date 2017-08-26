@@ -28,9 +28,12 @@ h3 {
 .new-room-button {
     border: 1px solid black;
     padding: 1rem;
-    margin-left: 0.5rem;
+    margin-left: 150px;
     position: fixed;
-    right: 1px;
+    left: 100px;
+    top: 50px;
+    cursor: pointer;
+
 }
 
 .room-nav {
@@ -41,3 +44,19 @@ h3 {
     left: 0px;
     height: 100%;
 }
+
+.modal-box {
+    position: fixed;
+    margin-left: 32%;
+}
+
+.btn-new {
+    cursor: pointer;
+}
+
+.btn-cancel {
+    cursor: pointer;
+}
+
+
+
