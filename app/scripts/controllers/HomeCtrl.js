@@ -1,6 +1,7 @@
 (function() {
-    function HomeCtrl(Room, $uibModal) {
+    function HomeCtrl(Room, Message, $uibModal) {
         this.chatRooms = Room.all;
+        this.currentRoom = null;
         this.addRoom = function() {
             $uibModal.open({
                 templateUrl: '/templates/modal.html',
@@ -8,9 +9,15 @@
                 controller: 'ModalCtrl as modal'
             });
         }
+
+        this.setCurrentRoom = function(room){
+            this.currentRoom = room;
+            this.messages = Message.getByRoomID(this.currentRoom.$id);
+            console.log(this.messages);
+        }
     }
     
     angular
         .module('blocChatProject')
-        .controller('HomeCtrl', ['Room', '$uibModal', HomeCtrl]);
+        .controller('HomeCtrl', ['Room', 'Message', '$uibModal', HomeCtrl]);
 })();

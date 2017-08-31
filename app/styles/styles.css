@@ -58,5 +58,7 @@ h3 {
     cursor: pointer;
 }
 
-
+.room-name:hover {
+    cursor: pointer;
+}
 
