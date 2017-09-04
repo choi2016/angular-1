@@ -10,8 +10,8 @@
 <div class="chatroom">
 	<h3 style="text-align: center;">{{home.currentRoom.name}}</h3>
 	<div class="messages" ng-repeat="message in home.messages">
-		<div class="username" style="text-align: center;">{{ home.userName }}</div>
-		<div class="timeStamp" style="text-align: center;">{{ home.sentAt }}</div>
-		<div class="user-message" style="text-align: center;">{{ home.content }}</div>
+		<div class="username" style="text-align: center;">{{ message.username }}</div>
+		<div class="timeStamp" style="text-align: center;">{{ message.sentAt }}</div>
+		<div class="user-message" style="text-align: center;">{{ message.content }}</div>
 	</div>
 </div> 
