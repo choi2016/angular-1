@@ -13,7 +13,6 @@
         this.setCurrentRoom = function(room){
             this.currentRoom = room;
             this.messages = Message.getByRoomID(this.currentRoom.$id);
-            console.log(this.messages);
         }
     }
     
