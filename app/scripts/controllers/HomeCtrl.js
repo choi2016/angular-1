@@ -1,7 +1,9 @@
 (function() {
-    function HomeCtrl(Room, Message, $uibModal) {
+    function HomeCtrl(Room, Message, $uibModal, $cookies) {
+        this.currentUser = $cookies.get('currentUser');
         this.chatRooms = Room.all;
         this.currentRoom = null;
+
         this.addRoom = function() {
             $uibModal.open({
                 templateUrl: '/templates/modal.html',
@@ -18,5 +20,5 @@
     
     angular
         .module('blocChatProject')
-        .controller('HomeCtrl', ['Room', 'Message', '$uibModal', HomeCtrl]);
+        .controller('HomeCtrl', ['Room', 'Message', '$uibModal', '$cookies', HomeCtrl]);
 })();

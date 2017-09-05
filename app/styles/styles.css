@@ -64,3 +64,14 @@ h3 {
     cursor: pointer;
 }
 
+.set-username {
+    margin-left:; 80%;
+    background-color: silver;
+    border: 1px solid black;
+    position: fixed;
+}
+
+.create-button:hover {
+    cursor: pointer;
+}
+
