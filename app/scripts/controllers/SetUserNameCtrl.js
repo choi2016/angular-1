@@ -1,7 +1,7 @@
 (function() {
     function UserModalInstanceCtrl($scope, $uibModalInstance, $cookies) {
         $scope.setUsername = function() {
-            $cookies.blocChatCurrentUser = $scope.modal.username;
+            $cookies.currentUser = $scope.modal.username;
             
             $uibModalInstance.close();
         };
