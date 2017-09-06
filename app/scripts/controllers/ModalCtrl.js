@@ -4,15 +4,12 @@
             $uibModalInstance.close();
         };
 
+        //create room
         this.submit = function() {
             Room.add(this.newRoom);
+            
             $uibModalInstance.close();
         };
-        //create function to create username
-        this.create = function() {
-            $cookies.put('currentUser', modal.username);
-            $uibModalInstance.close();
-        }
     }
 
     angular

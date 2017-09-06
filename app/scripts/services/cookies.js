@@ -5,7 +5,7 @@
     if (!currentlyUser || currentlyUser === '') {
     	//opens create function in modalctrl
 		$uibModal.open({
-			controller: 'ModalCtrl as modal',
+			controller: 'setUserNameCtrl as setUserName',
 			//template for create username box
 			templateUrl: '/templates/username.html'	,
 			size: 'sm',
