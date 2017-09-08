@@ -10,6 +10,11 @@
             
             $uibModalInstance.close();
         };
+
+        this.create = function() {
+            $cookies.put('currentUser', modal.username);
+            $uibModalInstance.close();
+        };
     }
 
     angular

@@ -1,7 +1,7 @@
 (function() {
-    function UserModalInstanceCtrl($scope, $uibModalInstance, $cookies) {
-        $scope.setUsername = function() {
-            $cookies.currentUser = $scope.modal.username;
+    function SetUsernameCtrl($uibModalInstance, $cookies) {
+        this.setUsername = function() {
+            $cookies.currentUser = this.modal.username;
             
             $uibModalInstance.close();
         };
@@ -9,5 +9,5 @@
     
     angular
         .module('blocChatProject')
-        .controller('UserModalInstanceCtrl', ['$scope', '$uibModalInstance', '$cookies', UserModalInstanceCtrl]);
+        .controller('SetUsernameCtrl', ['$uibModalInstance', '$cookies', SetUsernameCtrl]);
 })();

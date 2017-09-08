@@ -4,6 +4,7 @@
         this.currentUser = $cookies.get('currentUser');
         this.chatRooms = Room.all;
         this.currentRoom = null;
+        this.messages = null;
 
         this.addRoom = function() {
             $uibModal.open({
