@@ -3,6 +3,7 @@
         this.chatRooms = Room.all;
         this.currentRoom = null;
         this.messages = null;
+        this.currentUser = $cookies.get('blocChatCurrentUser');
 
         this.addRoom = function() {
             $uibModal.open({
@@ -15,7 +16,6 @@
         this.setCurrentRoom = function(room){
             this.currentRoom = room;
             this.messages = Message.getByRoomID(this.currentRoom.$id);
-            this.currentUser1 = $cookies.get('currentUser');
         }
     }
     

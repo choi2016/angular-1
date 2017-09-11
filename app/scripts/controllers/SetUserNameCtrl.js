@@ -1,15 +1,14 @@
 (function() {
-    function SetUsernameCtrl($uibModalInstance, $cookies) {
-        //function that stores username when username.html runs
-        this.setUsername = function() {
-        	//sets this.username for given cookie key(currentUser)
-            $cookies.put('currentUser', modal.username);
-            console.log(modal.username);
+    function SetUserNameCtrl($uibModalInstance, $cookies) {
+        //function that sets username when username.html runs
+        this.create = function() {
+        	//sets modal.username for cookie key(blocChatCurrentUser)
+            $cookies.put('blocChatCurrentUser', modal.username);
             $uibModalInstance.close();
-        };
+        }
     }
     
     angular
         .module('blocChatProject')
-        .controller('SetUsernameCtrl', ['$uibModalInstance', '$cookies', SetUsernameCtrl]);
+        .controller('SetUserNameCtrl', ['$uibModalInstance', '$cookies', SetUserNameCtrl]);
 })();

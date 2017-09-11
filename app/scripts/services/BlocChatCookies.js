@@ -1,5 +1,5 @@
 (function() {
-  function cookies($cookies, $uibModal) {
+  function BlocChatCookies($cookies, $uibModal) {
     //$cookies.get gets the value of currentUser
     var currentUser = $cookies.get('blocChatCurrentUser');
     //if there's no current username or current username is an empty string
@@ -19,5 +19,5 @@
   angular
     .module('blocChatProject')
     //.run() block makes sure to set username when app is initialized
-    .run(['$cookies', '$uibModal', cookies]);
+    .run(['$cookies', '$uibModal', BlocChatCookies]);
 })();
