@@ -1,7 +1,5 @@
 (function() {
     function HomeCtrl(Room, Message, $uibModal, $cookies) {
-        //gets current users username
-        this.currentUser = $cookies.get('currentUser');
         this.chatRooms = Room.all;
         this.currentRoom = null;
         this.messages = null;
@@ -17,6 +15,7 @@
         this.setCurrentRoom = function(room){
             this.currentRoom = room;
             this.messages = Message.getByRoomID(this.currentRoom.$id);
+            this.currentUser1 = $cookies.get('currentUser');
         }
     }
     

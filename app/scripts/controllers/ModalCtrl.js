@@ -1,5 +1,6 @@
 (function() {
     function ModalCtrl(Room, $uibModalInstance, $cookies) {
+        //cancels ceating room
         this.cancel = function() {
             $uibModalInstance.close();
         };
@@ -11,10 +12,6 @@
             $uibModalInstance.close();
         };
 
-        this.create = function() {
-            $cookies.put('currentUser', modal.username);
-            $uibModalInstance.close();
-        };
     }
 
     angular

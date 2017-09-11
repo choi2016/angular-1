@@ -1,8 +1,10 @@
 (function() {
     function SetUsernameCtrl($uibModalInstance, $cookies) {
+        //function that stores username when username.html runs
         this.setUsername = function() {
-            $cookies.currentUser = this.modal.username;
-            
+        	//sets this.username for given cookie key(currentUser)
+            $cookies.put('currentUser', modal.username);
+            console.log(modal.username);
             $uibModalInstance.close();
         };
     }

@@ -1,12 +1,11 @@
 (function() {
   function BlocChatCookies($cookies, $uibModal) {
-    var currentlyUser = $cookies.get('currentUser');
-    //if there's no current username or current username is empty
-    if (!currentlyUser || currentlyUser === '') {
-    	//opens create function in modalctrl
+    var currentUser1 = $cookies.get('currentUser');
+    //if there's no current username or current username is an empty string
+    if (!currentUser1 || currentUser1 === '') {
   		$uibModal.open({
+        //modal configuration object properties
   			controller: 'SetUsernameCtrl as setUsername',
-  			//template for create username box
   			templateUrl: '/templates/username.html'	,
   			size: 'sm',
   			backdrop: false,
@@ -17,5 +16,5 @@
 
   angular
     .module('blocChatProject')
-    .run(['$cookies', '$uibModal',BlocChatCookies]);
+    .run(['$cookies', '$uibModal', BlocChatCookies]);
 })();
