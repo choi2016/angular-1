@@ -1,6 +1,6 @@
 (function() {
     function ModalCtrl(Room, $uibModalInstance, $cookies) {
-        //cancels ceating room
+        //cancels creating room
         this.cancel = function() {
             $uibModalInstance.close();
         };
