@@ -1,9 +1,9 @@
 (function() {
   function BlocChatCookies($cookies, $uibModal) {
-    //$cookies.get gets the value of currentUser
+    //$cookies.get gets the value of blocChatCurrentUser
     var currentUser = $cookies.get('blocChatCurrentUser');
     //if there's no current username or current username is an empty string
-    //if statement should run when app is initialized due to .run() block but it doesn't seem to run. 
+    //if statement should run when app is initialized due to .run() block
     if (!currentUser || currentUser === '') {
   		$uibModal.open({
         //modal configuration object properties

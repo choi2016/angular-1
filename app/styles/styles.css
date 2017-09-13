@@ -65,10 +65,12 @@ h3 {
 }
 
 .set-username {
-    margin-left:; 80%;
     background-color: silver;
     border: 1px solid black;
     position: fixed;
+    left: 600px;
+    width: 300px;
+    
 }
 
 .create-button:hover {
