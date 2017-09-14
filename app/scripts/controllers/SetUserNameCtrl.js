@@ -1,11 +1,15 @@
 (function() {
     function SetUserNameCtrl($uibModalInstance, $cookies) {
-        //function that sets username when username.html runs
+        //function that creates cookie
         this.create = function() {
-        	//sets newUsername for cookie key(blocChatCurrentUser)
-            $cookies.put('blocChatCurrentUser', this.newUsername);
-            console.log(blocChatCurrentUser);
-            $uibModalInstance.close();
+            //if statement runs only when username is not undefined
+            if(this.newUsername !== undefined || this.newUsername == "") {
+                //sets newUsername for cookie key(blocChatCurrentUser)
+                $cookies.put('blocChatCurrentUser', this.newUsername);
+                $uibModalInstance.close();
+                console.log(this.newUsername);
+
+            }
         }
     }
     
