@@ -74,3 +74,20 @@ h3 {
     cursor: pointer;
 }
 
+.message-box {
+    bottom: 0px;
+    left: 286px;
+    width: 80%;
+    position: fixed;
+    color: silver;
+}
+
+.send-button {
+    bottom: 0px;
+    right: 0px;
+    position: fixed;
+}
+
+.username {
+    color: silver;
+}
