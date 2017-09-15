@@ -10,7 +10,6 @@
 		};
 
 		Message.send = function(newMessage) {
-			newMessage.timestamp = firebase.database.ServerValue.TIMESTAMP;
 			messages.$add(newMessage);
 		};
 
